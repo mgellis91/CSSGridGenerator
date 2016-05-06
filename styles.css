@@ -1,0 +1,90 @@
+body{
+  color:#333;
+  padding:0 1.6em;
+  background:  url("restaurant.png") repeat center center fixed;
+}
+
+input{
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+.container{
+  max-width: 960px;
+  margin: 1.6em auto;
+  padding:10px 20px;
+  border-radius:5px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 0 20px 0 rgba(50, 50, 50, 0.2);
+  background:white;
+}
+
+form{
+  margin: 0 auto;
+  margin-top: 1.6em;
+}
+
+.form-section{
+  float: left;
+  margin-bottom: 1.6em;
+  width: 33%;
+  padding-right:10px;
+}
+
+@media screen and (max-width:769px){
+  .form-section{
+    width: 100%;
+  }
+}
+
+label{
+  display: block;
+}
+
+#tabs ul{
+  width:100%;
+  padding:0;
+  margin-bottom: 1.6em;
+}
+
+#tabs li{
+  display:inline;
+}
+
+#tabs li a{
+  border-radius: 5px;
+  padding:1em;
+  background:#F1F1F1;
+  color:#4f4f4f;
+  text-align: center;
+  text-decoration: none;
+}
+
+#tabs li a.active{
+    background:#CF6E56;
+  color:white;
+}
+
+.preview-content{
+  background: #333;
+  height: 220px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
